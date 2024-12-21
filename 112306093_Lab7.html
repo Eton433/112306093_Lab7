@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 7</title>
+    <link rel="stylesheet" href="112306093_Lab7.css">
+</head>
+<body>
+    <h1>Grade Submission System</h1>
+    <form id="gradeForm">
+        <label for="mathGrade">Math Grade:</label>
+        <input type="number" id="mathGrade" required>
+        <label for="englishGrade">English Grade:</label>
+        <input type="number" id="englishGrade" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <table id="gradeTable">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Math Grade</th>
+                <th>English Grade</th>
+                <th>Average</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Rows will be dynamically added here -->
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Average</td>
+                <td id="mathAverage">-</td>
+                <td id="englishAverage">-</td>
+                <td id="overallAverage">-</td>
+            </tr>
+        </tfoot>
+    </table>
+    <script src="112306093_Lab7.js"></script>
+</body>
+</html>
